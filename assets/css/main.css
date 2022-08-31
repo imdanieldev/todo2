@@ -1,0 +1,117 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+     background-color: #FFF;
+     color: #000;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+main h1 {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	margin-bottom: 0.5rem;
+}
+
+main h1 ~ p {
+	margin-bottom: 2rem;
+}
+
+main .create-new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 480px;
+}
+
+main .create-new input {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	background-color: transparent;
+	color: #000;
+	font-size: 1.5rem;
+     padding: 0.5rem 1rem;
+	margin: 0;
+	transition: 0.4s;
+}
+
+main .create-new input:focus {
+	border-bottom-color: rgb(47, 147, 214);
+}
+
+main .create-new button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: rgb(47, 175, 214);
+	text-transform: uppercase;
+	border-bottom: 1px solid rgb(47, 175, 214);
+	font-weight: bold;
+	color: #FFF;
+     font-size: 1.5rem;
+     padding: 0.5rem 1rem;
+	cursor: pointer;
+     margin-left: 2rem;
+     border-radius: 0.5rem;
+}
+
+main .tasks {
+	width: 100%;
+	max-width: 480px;
+	margin-top: 2rem;
+}
+
+main .tasks .task {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #EEE;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+main .tasks .task .buttons {
+	min-width: fit-content;
+}
+
+main .tasks .task button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: rgb(47, 214, 61);
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+main .tasks .task button.delete {
+	background-color: crimson;
+	color: #EEE;
+}
+
+.tasks .task.is-complete {
+	opacity: 0.7;
+}
+
+.tasks .task.is-complete .content {
+	text-decoration: line-through;
+}
